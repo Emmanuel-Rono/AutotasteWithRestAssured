@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-27T15:58:03 EAT" name="Default suite" finished-at="2025-03-27T15:58:18 EAT" duration-ms="15747">
+  <suite started-at="2025-03-28T16:33:38 EAT" name="PetSuite" finished-at="2025-03-28T16:33:57 EAT" duration-ms="18616">
     <groups>
     </groups>
-    <test started-at="2025-03-27T15:58:03 EAT" name="Default test" finished-at="2025-03-27T15:58:18 EAT" duration-ms="15747">
+    <test started-at="2025-03-28T16:33:38 EAT" name="PetTest" finished-at="2025-03-28T16:33:57 EAT" duration-ms="18616">
+      <class name="api.tests.UserTests">
+        <test-method is-config="true" signature="GenerateData()[pri:0, instance:api.tests.UserTests@292b08d6]" started-at="2025-03-28T16:33:40 EAT" name="GenerateData" finished-at="2025-03-28T16:33:42 EAT" duration-ms="2471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateData -->
+        <test-method signature="testCreateUser()[pri:1, instance:api.tests.UserTests@292b08d6]" started-at="2025-03-28T16:33:42 EAT" name="testCreateUser" finished-at="2025-03-28T16:33:50 EAT" duration-ms="7563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+      </class> <!-- api.tests.UserTests -->
       <class name="api.tests.DDTest">
-        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.tests.DDTest@18078bef]" started-at="2025-03-27T15:58:08 EAT" name="testPostUser" data-provider="Data" finished-at="2025-03-27T15:58:15 EAT" duration-ms="7443" status="PASS">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.tests.DDTest@54d9d12d]" started-at="2025-03-28T16:33:53 EAT" name="testPostUser" data-provider="Data" finished-at="2025-03-28T16:33:54 EAT" duration-ms="1351" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.tests.DDTest@18078bef]" started-at="2025-03-27T15:58:15 EAT" name="testPostUser" data-provider="Data" finished-at="2025-03-27T15:58:17 EAT" duration-ms="1468" status="PASS">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.tests.DDTest@54d9d12d]" started-at="2025-03-28T16:33:55 EAT" name="testPostUser" data-provider="Data" finished-at="2025-03-28T16:33:56 EAT" duration-ms="1300" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.tests.DDTest@18078bef]" started-at="2025-03-27T15:58:17 EAT" name="testPostUser" data-provider="Data" finished-at="2025-03-27T15:58:18 EAT" duration-ms="1435" status="PASS">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.tests.DDTest@54d9d12d]" started-at="2025-03-28T16:33:56 EAT" name="testPostUser" data-provider="Data" finished-at="2025-03-28T16:33:57 EAT" duration-ms="1269" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,6 +126,6 @@
           </reporter-output>
         </test-method> <!-- testPostUser -->
       </class> <!-- api.tests.DDTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- PetTest -->
+  </suite> <!-- PetSuite -->
 </testng-results>

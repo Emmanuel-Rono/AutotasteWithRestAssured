@@ -1,5 +1,7 @@
 package api.tests;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -13,6 +15,8 @@ import io.restassured.response.Response;
 public class UserTests {
 	Faker faker;
 	User userPayLoad;
+	public Logger logger;
+	
 
 	@BeforeClass
 	
@@ -32,15 +36,23 @@ public class UserTests {
         userPayLoad.setPhone(faker.phoneNumber().cellPhone());  
       
         //userPayLoad.setUserStatus(faker.number().numberBetween(0, 2));
+        
+        logger=LogManager.getLogger(this.getClass());
+        
 		
 	}
 	
 	@Test(priority=1)
 	public void testCreateUser()
+	{
+	
+	logger.info("*************Creating USer**********");
 	{ 
 		Response response =UseEndPointsImpl.CreateUser(userPayLoad);
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(),200);
+		
+		logger.info("*************End of Creation**********");
 	}
 	/*
 	@Test(priority=2)
@@ -67,4 +79,4 @@ public class UserTests {
 	*/
 
 
-}
+}}

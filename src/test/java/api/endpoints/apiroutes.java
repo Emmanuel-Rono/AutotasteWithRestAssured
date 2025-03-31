@@ -16,5 +16,4 @@ public class apiroutes
 	public static String getUrl = base_url +"/user/{username}";
 	public static String deleteUrl= base_url+ "/user/{username}";
 	public static String putUrl = base_url +"/user/{username}"; 
-
 }
